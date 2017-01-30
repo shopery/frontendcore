@@ -322,7 +322,7 @@
 				// Clean Paste
 
 				$('div[contenteditable]', oTarget.parentNode).bind("paste", function(e) {
-					document.execCommand("insertHTML", false, e.originalEvent.clipboardData.getData('text'));
+					document.execCommand("insertText", false, e.originalEvent.clipboardData.getData('text'));
 					e.preventDefault();
 				});
 
